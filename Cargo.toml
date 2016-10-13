@@ -53,6 +53,14 @@ zmq_has = []
 unstable = ["clippy"]
 unstable-testing = ["compiletest_rs", "unstable"]
 
+[[example]]
+name = "rtdealer"
+path = "examples/zguide/rtdealer/main.rs"
+
+[[example]]
+name = "fileio3"
+path = "examples/zguide/fileio3/main.rs"
+
 [dependencies]
 libc = "0.2.15"
 log = "0.3.6"
@@ -65,3 +73,4 @@ zmq-sys = { version = "0.8.0", path = "zmq-sys" }
 
 [dev-dependencies]
 rand = "*"
+tempfile = "*"
